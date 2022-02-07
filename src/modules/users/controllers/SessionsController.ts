@@ -1,5 +1,4 @@
 import { Request, Response } from 'express';
-import { Session } from 'inspector';
 import CreateSessionService from '../services/CreateSessionSevice';
 
 export default class SessionsController {
