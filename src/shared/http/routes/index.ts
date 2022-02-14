@@ -1,7 +1,7 @@
 import productsRouter from '@modules/products/routes/products.routes';
 import usersRouter from '@modules/users/routes/users.routes';
 import sessionsRouter from '@modules/users/routes/sessions.routes';
-import passwordRouter from '@modules/users/routes/password.routes'
+import passwordRouter from '@modules/users/routes/password.routes';
 import { Router } from 'express';
 
 const routes = Router();
