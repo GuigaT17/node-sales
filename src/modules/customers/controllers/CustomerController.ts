@@ -25,11 +25,11 @@ export default class CustomerController {
   }
 
   public async show(request: Request, response: Response): Promise<Response> {
-    const { id } = request.body;
+    const { id } = request.params;
 
     const showCustomer = new ShowCustomerService();
 
-    const customer = await showCustomer.execute(id);
+    const customer = await showCustomer.execute({ id });
 
     return response.json(customer);
   }
