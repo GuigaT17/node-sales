@@ -5,8 +5,9 @@ import {
   TableForeignKey,
 } from 'typeorm';
 
-export class AddOrderIdToOrdersProducts1609038414735 implements MigrationInterface {
-  // eslint-disable-next-line prettier/prettier
+export class AddOrderIdToOrdersProducts1609038414735
+  implements MigrationInterface
+{
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.addColumn(
       'orders_products',
